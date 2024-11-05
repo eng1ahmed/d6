@@ -1,0 +1,314 @@
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ez{
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #ddd;
+    color: #03a9f4;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ez::before{
+    content: "";
+    transform: rotate(-5deg);
+    background-color: #03a9f4;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+}
+.ez::after{
+    content: "";
+    position: absolute;
+    transform: rotate(5deg);
+    background-color:#e91e63 ;
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+}
+.ez-2{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.ez-2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+}
+.ez-2::after{
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #03a9f4 transparent #03a9f4 #03a9f4;
+}
+.ez-3{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    
+}
+.ez-3::before{
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+}
+.ez-3::after{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #03a9f4 transparent #03a9f4 #03a9f4;
+}
+.ez-3:hover::before{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.ez-3:hover::after{
+    transform: rotate(360deg);
+    transition: .5s;
+    transition-delay: .5s;
+}
+.one{
+    background-color: #ff5722;
+    width: 150px;
+    margin: 40px auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.one::before , .one::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #ff5722;
+z-index: -1;
+left: 0;
+top: 0;
+}
+.one::before{
+    transform: skew(10deg,10deg);
+}
+.one::after{
+    transform: skew(-10deg,-10deg);
+}
+.two{
+    color: white;
+    background-color: #009688;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    position:relative;
+}
+.two::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    z-index: -1;
+    top: 0;
+    left: -20px;
+    border-left:5px solid white ;
+    transform: skew(20deg);
+}
+.two::after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background-color: #009688;
+    z-index: -1;
+    top: 0;
+    left: -58px;
+   
+    transform: skew(20deg);
+}
+.three {
+background-color:#607d8b ;
+color: white;
+width: 200px;
+height: 200px;
+margin: 200px auto;
+position: relative;
+border-bottom: 3px solid black;
+content: "Elzero";
+align-items: flex-end;
+display: flex;
+}
+.three::before {
+    transform: rotate(44.5deg);
+    content: "";
+    background-color: #000000;
+    color: white;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    left: 28px;
+    top: -71px;
+    }
+    .three::after{
+        content: "Elzero";
+        position: absolute;
+        color: white;
+        font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    }
+    .four{
+width: 200px;
+height: 200px;
+margin: 20px auto;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight: bold;
+position: relative;
+transform-style: preserve-3d;
+transition: 1s;
+    }
+    .four::before{
+        content: "Front";
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: #fa3664;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .four::after{
+        transition: 1s;
+        content: "Back";
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: #2696f4;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
+    }
+    .four:hover{
+        transform: rotateY(180deg);
+    }
+    .five{
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 1s;
+            }
+            .five::before{
+                content: "Front";
+                position: absolute;
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+                background-color: #fa3664;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .five::after{
+                transition: 1s;
+                content: "Back";
+                position: absolute;
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+                background-color: #2696f4;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+           backface-visibility: hidden;
+           transform: rotateX(180deg);
+            }
+            .five:hover{
+                transform: rotateX(180deg);
+            }
+
+/*.class {
+  matrix(3, 0.2679, 0, 3, 100, 100);
+}
+  scalex 3
+  skewy 0.2679
+  skewx 0
+  scaley 3
+  translatex 20
+  translatey 100
